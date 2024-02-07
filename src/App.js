@@ -6,7 +6,7 @@ import Featurs from "./Components/Featurs";
 import FeaturProduct from "./Components/FeaturProduct";
 import Banner from "./Components/Banner";
 import BestSell from "./Components/BestSell";
-import CustomerReview from "./Components/CustomerReview";
+import CustomerReview from "./Components/CustomerReviews";
 import Footer from "./Components/Footer";
 import Products from "./Components/Products";
 import { useEffect, useState } from "react";
@@ -18,7 +18,7 @@ const [products, setProducts]=useState([])
 
   useEffect(() => {
     axios
-      .get("http://localhost/reactjs/frutis/backend/getAllApi/getProducts.php")
+      .get("http://localhost/reactjs/fruits/backend/getAllApi/getProducts.php")
       .then((res) => {
         setProducts(res.data);
       });
