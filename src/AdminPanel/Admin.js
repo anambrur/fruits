@@ -1,0 +1,531 @@
+import React from "react";
+
+export default function Admin() {
+  return (
+    <>
+      
+      {/* Custom Theme Style */}
+      <link href="../build/css/custom.min.css" rel="stylesheet" />
+      <div className="container body">
+        <div className="main_container">
+          <div className="col-md-3 left_col">
+            <div className="left_col scroll-view">
+              <div className="navbar nav_title" style={{ border: 0 }}>
+                <a href="index.html" className="site_title">
+                  <i className="fa fa-paw" /> <span>Gentelella Alela!</span>
+                </a>
+              </div>
+              <div className="clearfix" />
+              {/* menu profile quick info */}
+              <div className="profile clearfix">
+                <div className="profile_pic">
+                  <img
+                    src="images/img.jpg"
+                    alt="..."
+                    className="img-circle profile_img"
+                  />
+                </div>
+                <div className="profile_info">
+                  <span>Welcome,</span>
+                  <h2>John Doe</h2>
+                </div>
+                <div className="clearfix" />
+              </div>
+              {/* /menu profile quick info */}
+              <br />
+              {/* sidebar menu */}
+              <div
+                id="sidebar-menu"
+                className="main_menu_side hidden-print main_menu"
+              >
+                <div className="menu_section">
+                  <h3>General</h3>
+                  <ul className="nav side-menu">
+                    <li>
+                      <a>
+                        <i className="fa fa-home" /> Home{" "}
+                        <span className="fa fa-chevron-down" />
+                      </a>
+                      <ul className="nav child_menu">
+                        <li>
+                          <a href="index.html">Dashboard</a>
+                        </li>
+                        <li>
+                          <a href="index2.html">Dashboard2</a>
+                        </li>
+                        <li>
+                          <a href="index3.html">Dashboard3</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a>
+                        <i className="fa fa-edit" /> Forms{" "}
+                        <span className="fa fa-chevron-down" />
+                      </a>
+                      <ul className="nav child_menu">
+                        <li>
+                          <a href="form.html">General Form</a>
+                        </li>
+                        <li>
+                          <a href="form_advanced.html">Advanced Components</a>
+                        </li>
+                        <li>
+                          <a href="form_validation.html">Form Validation</a>
+                        </li>
+                        <li>
+                          <a href="form_wizards.html">Form Wizard</a>
+                        </li>
+                        <li>
+                          <a href="form_upload.html">Form Upload</a>
+                        </li>
+                        <li>
+                          <a href="form_buttons.html">Form Buttons</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a>
+                        <i className="fa fa-desktop" /> UI Elements{" "}
+                        <span className="fa fa-chevron-down" />
+                      </a>
+                      <ul className="nav child_menu">
+                        <li>
+                          <a href="general_elements.html">General Elements</a>
+                        </li>
+                        <li>
+                          <a href="media_gallery.html">Media Gallery</a>
+                        </li>
+                        <li>
+                          <a href="typography.html">Typography</a>
+                        </li>
+                        <li>
+                          <a href="icons.html">Icons</a>
+                        </li>
+                        <li>
+                          <a href="glyphicons.html">Glyphicons</a>
+                        </li>
+                        <li>
+                          <a href="widgets.html">Widgets</a>
+                        </li>
+                        <li>
+                          <a href="invoice.html">Invoice</a>
+                        </li>
+                        <li>
+                          <a href="inbox.html">Inbox</a>
+                        </li>
+                        <li>
+                          <a href="calendar.html">Calendar</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a>
+                        <i className="fa fa-table" /> Tables{" "}
+                        <span className="fa fa-chevron-down" />
+                      </a>
+                      <ul className="nav child_menu">
+                        <li>
+                          <a href="tables.html">Tables</a>
+                        </li>
+                        <li>
+                          <a href="tables_dynamic.html">Table Dynamic</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a>
+                        <i className="fa fa-bar-chart-o" /> Data Presentation{" "}
+                        <span className="fa fa-chevron-down" />
+                      </a>
+                      <ul className="nav child_menu">
+                        <li>
+                          <a href="chartjs.html">Chart JS</a>
+                        </li>
+                        <li>
+                          <a href="chartjs2.html">Chart JS2</a>
+                        </li>
+                        <li>
+                          <a href="morisjs.html">Moris JS</a>
+                        </li>
+                        <li>
+                          <a href="echarts.html">ECharts</a>
+                        </li>
+                        <li>
+                          <a href="other_charts.html">Other Charts</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a>
+                        <i className="fa fa-clone" />
+                        Layouts <span className="fa fa-chevron-down" />
+                      </a>
+                      <ul className="nav child_menu">
+                        <li>
+                          <a href="fixed_sidebar.html">Fixed Sidebar</a>
+                        </li>
+                        <li>
+                          <a href="fixed_footer.html">Fixed Footer</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <div className="menu_section">
+                  <h3>Live On</h3>
+                  <ul className="nav side-menu">
+                    <li>
+                      <a>
+                        <i className="fa fa-bug" /> Additional Pages{" "}
+                        <span className="fa fa-chevron-down" />
+                      </a>
+                      <ul className="nav child_menu">
+                        <li>
+                          <a href="e_commerce.html">E-commerce</a>
+                        </li>
+                        <li>
+                          <a href="projects.html">Projects</a>
+                        </li>
+                        <li>
+                          <a href="project_detail.html">Project Detail</a>
+                        </li>
+                        <li>
+                          <a href="contacts.html">Contacts</a>
+                        </li>
+                        <li>
+                          <a href="profile.html">Profile</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a>
+                        <i className="fa fa-windows" /> Extras{" "}
+                        <span className="fa fa-chevron-down" />
+                      </a>
+                      <ul className="nav child_menu">
+                        <li>
+                          <a href="page_403.html">403 Error</a>
+                        </li>
+                        <li>
+                          <a href="page_404.html">404 Error</a>
+                        </li>
+                        <li>
+                          <a href="page_500.html">500 Error</a>
+                        </li>
+                        <li>
+                          <a href="plain_page.html">Plain Page</a>
+                        </li>
+                        <li>
+                          <a href="login.html">Login Page</a>
+                        </li>
+                        <li>
+                          <a href="pricing_tables.html">Pricing Tables</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a>
+                        <i className="fa fa-sitemap" /> Multilevel Menu{" "}
+                        <span className="fa fa-chevron-down" />
+                      </a>
+                      <ul className="nav child_menu">
+                        <li>
+                          <a href="#level1_1">Level One</a>
+                        </li>
+                        <li>
+                          <a>
+                            Level One
+                            <span className="fa fa-chevron-down" />
+                          </a>
+                          <ul className="nav child_menu">
+                            <li className="sub_menu">
+                              <a href="level2.html">Level Two</a>
+                            </li>
+                            <li>
+                              <a href="#level2_1">Level Two</a>
+                            </li>
+                            <li>
+                              <a href="#level2_2">Level Two</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#level1_2">Level One</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)">
+                        <i className="fa fa-laptop" /> Landing Page{" "}
+                        <span className="label label-success pull-right">
+                          Coming Soon
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              {/* /sidebar menu */}
+              {/* /menu footer buttons */}
+              <div className="sidebar-footer hidden-small">
+                <a data-toggle="tooltip" data-placement="top" title="Settings">
+                  <span
+                    className="glyphicon glyphicon-cog"
+                    aria-hidden="true"
+                  />
+                </a>
+                <a
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="FullScreen"
+                >
+                  <span
+                    className="glyphicon glyphicon-fullscreen"
+                    aria-hidden="true"
+                  />
+                </a>
+                <a data-toggle="tooltip" data-placement="top" title="Lock">
+                  <span
+                    className="glyphicon glyphicon-eye-close"
+                    aria-hidden="true"
+                  />
+                </a>
+                <a
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="Logout"
+                  href="login.html"
+                >
+                  <span
+                    className="glyphicon glyphicon-off"
+                    aria-hidden="true"
+                  />
+                </a>
+              </div>
+              {/* /menu footer buttons */}
+            </div>
+          </div>
+          {/* top navigation */}
+          <div className="top_nav">
+            <div className="nav_menu">
+              <div className="nav toggle">
+                <a id="menu_toggle">
+                  <i className="fa fa-bars" />
+                </a>
+              </div>
+              <nav className="nav navbar-nav">
+                <ul className=" navbar-right">
+                  <li
+                    className="nav-item dropdown open"
+                    style={{ paddingLeft: 15 }}
+                  >
+                    <a
+                      href="javascript:;"
+                      className="user-profile dropdown-toggle"
+                      aria-haspopup="true"
+                      id="navbarDropdown"
+                      data-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <img src="images/img.jpg" alt="" />
+                      John Doe
+                    </a>
+                    <div
+                      className="dropdown-menu dropdown-usermenu pull-right"
+                      aria-labelledby="navbarDropdown"
+                    >
+                      <a className="dropdown-item" href="javascript:;">
+                        {" "}
+                        Profile
+                      </a>
+                      <a className="dropdown-item" href="javascript:;">
+                        <span className="badge bg-red pull-right">50%</span>
+                        <span>Settings</span>
+                      </a>
+                      <a className="dropdown-item" href="javascript:;">
+                        Help
+                      </a>
+                      <a className="dropdown-item" href="login.html">
+                        <i className="fa fa-sign-out pull-right" /> Log Out
+                      </a>
+                    </div>
+                  </li>
+                  <li role="presentation" className="nav-item dropdown open">
+                    <a
+                      href="javascript:;"
+                      className="dropdown-toggle info-number"
+                      id="navbarDropdown1"
+                      data-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <i className="fa fa-envelope-o" />
+                      <span className="badge bg-green">6</span>
+                    </a>
+                    <ul
+                      className="dropdown-menu list-unstyled msg_list"
+                      role="menu"
+                      aria-labelledby="navbarDropdown1"
+                    >
+                      <li className="nav-item">
+                        <a className="dropdown-item">
+                          <span className="image">
+                            <img src="images/img.jpg" alt="Profile Image" />
+                          </span>
+                          <span>
+                            <span>John Smith</span>
+                            <span className="time">3 mins ago</span>
+                          </span>
+                          <span className="message">
+                            Film festivals used to be do-or-die moments for
+                            movie makers. They were where...
+                          </span>
+                        </a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="dropdown-item">
+                          <span className="image">
+                            <img src="images/img.jpg" alt="Profile Image" />
+                          </span>
+                          <span>
+                            <span>John Smith</span>
+                            <span className="time">3 mins ago</span>
+                          </span>
+                          <span className="message">
+                            Film festivals used to be do-or-die moments for
+                            movie makers. They were where...
+                          </span>
+                        </a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="dropdown-item">
+                          <span className="image">
+                            <img src="images/img.jpg" alt="Profile Image" />
+                          </span>
+                          <span>
+                            <span>John Smith</span>
+                            <span className="time">3 mins ago</span>
+                          </span>
+                          <span className="message">
+                            Film festivals used to be do-or-die moments for
+                            movie makers. They were where...
+                          </span>
+                        </a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="dropdown-item">
+                          <span className="image">
+                            <img src="images/img.jpg" alt="Profile Image" />
+                          </span>
+                          <span>
+                            <span>John Smith</span>
+                            <span className="time">3 mins ago</span>
+                          </span>
+                          <span className="message">
+                            Film festivals used to be do-or-die moments for
+                            movie makers. They were where...
+                          </span>
+                        </a>
+                      </li>
+                      <li className="nav-item">
+                        <div className="text-center">
+                          <a className="dropdown-item">
+                            <strong>See All Alerts</strong>
+                            <i className="fa fa-angle-right" />
+                          </a>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          {/* /top navigation */}
+          {/* page content */}
+          <div className="right_col" role="main">
+            <div className="">
+              <div className="page-title">
+                <div className="title_left">
+                  <h3>Plain Page</h3>
+                </div>
+                <div className="title_right">
+                  <div className="col-md-5 col-sm-5   form-group pull-right top_search">
+                    <div className="input-group">
+                      <input
+                        type="text"
+                        className="form-control"
+                        placeholder="Search for..."
+                      />
+                      <span className="input-group-btn">
+                        <button className="btn btn-default" type="button">
+                          Go!
+                        </button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="clearfix" />
+              <div className="row">
+                <div className="col-md-12 col-sm-12  ">
+                  <div className="x_panel">
+                    <div className="x_title">
+                      <h2>Plain Page</h2>
+                      <ul className="nav navbar-right panel_toolbox">
+                        <li>
+                          <a className="collapse-link">
+                            <i className="fa fa-chevron-up" />
+                          </a>
+                        </li>
+                        <li className="dropdown">
+                          <a
+                            href="#"
+                            className="dropdown-toggle"
+                            data-toggle="dropdown"
+                            role="button"
+                            aria-expanded="false"
+                          >
+                            <i className="fa fa-wrench" />
+                          </a>
+                          <div
+                            className="dropdown-menu"
+                            aria-labelledby="dropdownMenuButton"
+                          >
+                            <a className="dropdown-item" href="#">
+                              Settings 1
+                            </a>
+                            <a className="dropdown-item" href="#">
+                              Settings 2
+                            </a>
+                          </div>
+                        </li>
+                        <li>
+                          <a className="close-link">
+                            <i className="fa fa-close" />
+                          </a>
+                        </li>
+                      </ul>
+                      <div className="clearfix" />
+                    </div>
+                    <div className="x_content">Add content to the page ...</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* /page content */}
+          {/* footer content */}
+          <footer>
+            <div className="pull-right">
+              Gentelella - Bootstrap Admin Template by{" "}
+              <a href="https://colorlib.com">Colorlib</a>
+            </div>
+            <div className="clearfix" />
+          </footer>
+          {/* /footer content */}
+        </div>
+      </div>
+    </>
+  );
+}
