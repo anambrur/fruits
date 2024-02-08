@@ -9,8 +9,11 @@ export default function FreahOrgaVages() {
     infinite: true,
     speed: 500,
     slidesToShow: 3,
-    slidesToScroll: 3
+    slidesToScroll: 3,
+    
+    
   };
+  
 
   return (
     <>
@@ -21,7 +24,7 @@ export default function FreahOrgaVages() {
           
           
           <Slider {...settings}>
-            <div className="border border-primary rounded position-relative vesitable-item">
+            <div className="border border-primary rounded position-relative vesitable-item ">
               <div className="vesitable-img">
                 <img
                   src="img/vegetable-item-6.jpg"
