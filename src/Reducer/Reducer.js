@@ -7,9 +7,9 @@ export const getSliders = createAsyncThunk(
     async () => {
         try {
             const response = await axios.get(
-                "http://localhost/Reactjs/2024-02-01/routing/backend/getSliders.php"
+                "http://localhost/reactjs/adminpro-react/backend/API/SliderAPI/getSlider.php"
             );
-            return response.data;
+            return response.data.data;
         } catch (error) {
             console.error(error);
         }
@@ -19,7 +19,7 @@ export const counterSlice = createSlice({
     name: "counter",
     initialState: {
         value: 0,
-        test: 15,
+        test: 15852141,
         district: '',
         dd: {
             name: ''
@@ -41,7 +41,8 @@ export const counterSlice = createSlice({
         },
         getData: (state, action) => {
             state.district = action.payload
-        }
+        },
+        
     },
     extraReducers: (builder) => {
         builder
@@ -49,7 +50,8 @@ export const counterSlice = createSlice({
                 
             })
             .addCase(getSliders.fulfilled, (state, action) => {
-                state.sliders=action.payload
+               state.sliders=action.payload
+            //    console.log(action.payload)
             })
             .addCase(getSliders.rejected, (state, action) => {
 

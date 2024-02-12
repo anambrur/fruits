@@ -6,14 +6,12 @@ import { RouterProvider } from "react-router-dom";
 import router from "./Router";
 import { Provider } from "react-redux";
 import store from "./Reducer/store";
-import Home from "./Pages/Home";
-
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <Provider store={store}>
     <React.StrictMode>
       <RouterProvider router={router} />
-      {/* <Home/> */}
+      
     </React.StrictMode>
   </Provider>
 );
