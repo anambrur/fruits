@@ -1,16 +1,13 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getSliders } from "../Reducer/Reducer";
+import { getSliders } from "../Reducer/counterSlice";
 
 export default function Hero() {
   const sliders = useSelector((state) => state.counter.sliders);
-  console.log(sliders);
-  const test = useSelector((state) => state.counter.test);
-  console.log(test);
-
+  
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(getSliders());
+    dispatch(getSliders);
     
   },[]);
 

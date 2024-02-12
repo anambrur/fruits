@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 
 export default function AddFeatureProducts() {
   return (
     <>
-    <div className="container-fluid service py-5">
+      <div className="container-fluid service py-5">
         <div className="container py-5">
           <div className="row g-4 justify-content-center">
             <div className="col-md-6 col-lg-4">
@@ -60,7 +60,6 @@ export default function AddFeatureProducts() {
           </div>
         </div>
       </div>
-    
     </>
-  )
+  );
 }
