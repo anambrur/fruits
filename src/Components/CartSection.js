@@ -1,8 +1,6 @@
-import React, { useReducer } from "react";
-import cardReducer from "../Reducer/Reducer";
 
 export default function CartSection() {
-  const[state,dispatch]=useReducer(cardReducer,{number:1})
+  // const[state,dispatch]=useReducer(cardReducer,{number:1})
   // console.log(state)
   return (
     <>
@@ -44,17 +42,17 @@ export default function CartSection() {
                       style={{ width: 100 }}
                     >
                       <div className="input-group-btn">
-                        <button className="btn btn-sm btn-minus rounded-circle bg-light border" onClick={()=>dispatch({type:'decrease'})}>
+                        <button className="btn btn-sm btn-minus rounded-circle bg-light border" >
                           <i className="fa fa-minus" />
                         </button>
                       </div>
                       <input
                         type="text"
                         className="form-control form-control-sm text-center border-0"
-                        Value={state.number}
+                        Value={1}
                       />
                       <div className="input-group-btn">
-                        <button className="btn btn-sm btn-plus rounded-circle bg-light border" onClick={()=>dispatch({type:'increase'})}>
+                        <button className="btn btn-sm btn-plus rounded-circle bg-light border" >
                           <i className="fa fa-plus"  />
                         </button>
                       </div>

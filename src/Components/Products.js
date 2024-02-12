@@ -1,8 +1,7 @@
 import React from "react";
-import FruitsHeader from "./FruitsHeader";
-import FruitItem from "./FruitItem";
 
-export default function Products({ all_products_data }) {
+
+export default function Products() {
   return (
     <>
       <div className="container-fluid fruite py-5">

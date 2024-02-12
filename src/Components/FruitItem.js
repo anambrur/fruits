@@ -1,15 +1,15 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-export default function FruitItem({ One_product }) {
+export default function FruitItem() {
   return (
     <>
       <div className="col-md-6 col-lg-4 col-xl-3">
-        <NavLink to={`/shop-details/${One_product.id}`}>
+        <NavLink to="">
           <div className="rounded position-relative fruite-item">
             <div className="fruite-img">
               <img
-                src={`http://localhost/reactjs/frutis/backend/image/${One_product.photo}`}
+                src="img/fruite-item-5.jpg"
                 className="img-fluid w-100 rounded-top"
                 alt=""
               />
@@ -21,11 +21,11 @@ export default function FruitItem({ One_product }) {
               Fruits
             </div>
             <div className="p-4 border border-secondary border-top-0 rounded-bottom">
-              <h4>{One_product.name}</h4>
-              <p>{One_product.details}</p>
+              <h4>fdhjgdf</h4>
+              <p>dgdfg</p>
               <div className="d-flex justify-content-between flex-lg-wrap">
                 <p className="text-dark fs-5 fw-bold mb-0">
-                  $ {One_product.price} / kg
+                  $ 55 / kg
                 </p>
                 <a
                   href="#"

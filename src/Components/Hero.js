@@ -1,6 +1,9 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 export default function Hero() {
+  // const test =useSelector((state)=>state.counter.test);
+  // console.log(test)
   return (
     <>
       {/* Hero Start */}

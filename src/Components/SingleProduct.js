@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function SingleProduct({Single_product_details}) {
+export default function SingleProduct() {
   return (
     <>
       <div className="col-lg-8 col-xl-9">
@@ -9,7 +9,7 @@ export default function SingleProduct({Single_product_details}) {
             <div className="border rounded">
               <a href="#">
                 <img
-                  src={`http://localhost/reactjs/frutis/backend/image/${Single_product_details.photo}`}
+                  src=""
                   className="img-fluid rounded"
                   alt="Image"
                 />
@@ -17,9 +17,9 @@ export default function SingleProduct({Single_product_details}) {
             </div>
           </div>
           <div className="col-lg-6">
-            <h4 className="fw-bold mb-3">{Single_product_details.name}</h4>
+            <h4 className="fw-bold mb-3">jgidfgi</h4>
             <p className="mb-3">Category: Vegetables</p>
-            <h5 className="fw-bold mb-3">{Single_product_details.price} $</h5>
+            <h5 className="fw-bold mb-3">666 $</h5>
             <div className="d-flex mb-4">
               <i className="fa fa-star text-secondary" />
               <i className="fa fa-star text-secondary" />
@@ -28,10 +28,10 @@ export default function SingleProduct({Single_product_details}) {
               <i className="fa fa-star" />
             </div>
             <p className="mb-4">
-            {Single_product_details.details}
+            gdfgd
             </p>
             <p className="mb-4">
-            {Single_product_details.details}
+            gdfgdfg
             </p>
             <div className="input-group quantity mb-5" style={{ width: 100 }}>
               <div className="input-group-btn">
