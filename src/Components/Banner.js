@@ -5,7 +5,7 @@ import { getBanner } from "../Reducer/counterSlice";
 export default function Banner() {
   const banner = useSelector((state) => state.counter.banner);
   const dispatch = useDispatch();
-  console.log(banner);
+  // console.log(banner);
 
   useEffect(() => {
     dispatch(getBanner());
@@ -14,7 +14,7 @@ export default function Banner() {
     <>
       {banner.map((d, i) => {
         return (
-          <div className="container-fluid banner bg-secondary my-5">
+          <div className="container-fluid banner bg-secondary my-5"key={i}>
             <div className="container py-5">
               <div className="row g-4 align-items-center">
                 <div className="col-lg-6">

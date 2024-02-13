@@ -32,7 +32,7 @@ export default function FreahOrgaVages() {
             <Slider {...settings}>
               {organicVegetable.map((d, i) => {
                 return (
-                  <div className="border border-primary rounded position-relative vesitable-item ">
+                  <div className="border border-primary rounded position-relative vesitable-item " key={i}>
                     <div className="vesitable-img">
                       <img
                         src={`http://localhost/reactjs/adminpro-react/backend/images/${d.photo}`}

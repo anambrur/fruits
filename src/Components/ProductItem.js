@@ -13,13 +13,13 @@ export default function ProductItem() {
     <>
       {products.map((d, i) => {
         return (
-          <div className="col-md-6 col-lg-4 col-xl-3">
+          <div className="col-md-6 col-lg-4 col-xl-3" key={i}>
             <div className="rounded position-relative fruite-item">
               <div className="fruite-img">
                 <img
                   src={`http://localhost/reactjs/adminpro-react/backend/images/${d.photo}`}
                   className="img-fluid w-100 rounded-top"
-                  alt={i+1}
+                  alt={d.title}
                 />
               </div>
               <div

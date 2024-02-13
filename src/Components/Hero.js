@@ -17,7 +17,7 @@ export default function Hero() {
         return (
           <>
             {/* Hero Start */}
-            <div className="container-fluid py-5 mb-5 hero-header">
+            <div className="container-fluid py-5 mb-5 hero-header"key={i}>
               <div className="container py-5">
                 <div className="row g-5 align-items-center">
                   <div className="col-md-12 col-lg-7">
