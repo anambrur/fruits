@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getProducts } from "../Reducer/counterSlice";
+import { getProducts, getppp } from "../Reducer/counterSlice";
 
 export default function ProductItem() {
   const products = useSelector((state) => state.counter.products);
@@ -8,6 +8,8 @@ export default function ProductItem() {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getProducts());
+    dispatch(getppp());
+
   }, []);
   return (
     <>

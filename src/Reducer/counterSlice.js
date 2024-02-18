@@ -2,17 +2,28 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 
 //get slider
-export const getSliders = createAsyncThunk("sliderList", async () => {
+// export const getSliders = createAsyncThunk("sliderList", async () => {
+//   try {
+//     const response = await axios.get(
+//       "http://localhost/reactjs/adminpro-react/backend/API/SliderAPI/getSlider.php"
+//     );
+//     console.log(response.data.data);
+//   } catch (error) {
+//     console.error(error);
+//   }
+// });
+
+export const getppp = createAsyncThunk("fhfhdfh", async () => {
   try {
     const response = await axios.get(
       "http://localhost/reactjs/adminpro-react/backend/API/SliderAPI/getSlider.php"
     );
+
     return response.data.data;
   } catch (error) {
     console.error(error);
   }
 });
-
 
 //get Product
 export const getProducts = createAsyncThunk("productList", async () => {
@@ -26,20 +37,20 @@ export const getProducts = createAsyncThunk("productList", async () => {
   }
 });
 
-
-
 //get Organic Vegetable
-export const getOrganicVegetable = createAsyncThunk("OrganicVegetable", async () => {
-  try {
-    const response = await axios.get(
-      "http://localhost/reactjs/adminpro-react/backend/API/OrganicVegetable/getOrganicVegetable.php"
-    );
-    return response.data.data;
-  } catch (error) {
-    console.error(error);
+export const getOrganicVegetable = createAsyncThunk(
+  "OrganicVegetable",
+  async () => {
+    try {
+      const response = await axios.get(
+        "http://localhost/reactjs/adminpro-react/backend/API/OrganicVegetable/getOrganicVegetable.php"
+      );
+      return response.data.data;
+    } catch (error) {
+      console.error(error);
+    }
   }
-});
-
+);
 
 //get Organic Vegetable
 export const getBanner = createAsyncThunk("Banner", async () => {
@@ -53,7 +64,17 @@ export const getBanner = createAsyncThunk("Banner", async () => {
   }
 });
 
-
+//get Organic Vegetable
+export const getClients = createAsyncThunk("clientsList", async () => {
+  try {
+    const response = await axios.get(
+      "http://localhost/reactjs/adminpro-react/backend/API/Clinets/getClients.php"
+    );
+    return response.data.data;
+  } catch (error) {
+    console.error(error);
+  }
+});
 
 //main reducer function
 export const counterSlice = createSlice({
@@ -69,7 +90,8 @@ export const counterSlice = createSlice({
     products: [],
     organicVegetable: [],
     banner: [],
-},
+    clients: [],
+  },
   reducers: {
     inc: (state, action) => {
       state.value += action.payload;
@@ -87,22 +109,26 @@ export const counterSlice = createSlice({
       state.district = action.payload;
     },
   },
-  
+
   extraReducers: (builder) => {
-    builder.addCase(getSliders.fulfilled, (state, action) => {
+    builder.addCase(getppp.fulfilled, (state, action) => {
       state.sliders = action.payload;
     });
     //get Products
     builder.addCase(getProducts.fulfilled, (state, action) => {
-      state.products=( action.payload)
+      state.products = action.payload;
     });
     //get Organic Vegetable
     builder.addCase(getOrganicVegetable.fulfilled, (state, action) => {
-      state.organicVegetable=( action.payload)
+      state.organicVegetable = action.payload;
     });
     //get Banner
     builder.addCase(getBanner.fulfilled, (state, action) => {
-      state.banner=( action.payload)
+      state.banner = action.payload;
+    });
+    //get Clients
+    builder.addCase(getClients.fulfilled, (state, action) => {
+      state.clients = action.payload;
     });
   },
 });
