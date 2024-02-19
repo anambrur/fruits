@@ -1,25 +1,26 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
-export default function SingleProduct() {
+export default function SingleProduct({ Single_product_details }) {
   return (
     <>
       <div className="col-lg-8 col-xl-9">
         <div className="row g-4">
           <div className="col-lg-6">
             <div className="border rounded">
-              <a href="#">
+              <NavLink to="#">
                 <img
-                  src=""
+                  src={`http://localhost/reactjs/adminpro-react/backend/images/${Single_product_details.photo}`}
                   className="img-fluid rounded"
-                  alt="Image"
+                  alt={Single_product_details.name}
                 />
-              </a>
+              </NavLink>
             </div>
           </div>
           <div className="col-lg-6">
-            <h4 className="fw-bold mb-3">jgidfgi</h4>
+            <h4 className="fw-bold mb-3">{Single_product_details.name}</h4>
             <p className="mb-3">Category: Vegetables</p>
-            <h5 className="fw-bold mb-3">666 $</h5>
+            <h5 className="fw-bold mb-3">{Single_product_details.price} $</h5>
             <div className="d-flex mb-4">
               <i className="fa fa-star text-secondary" />
               <i className="fa fa-star text-secondary" />
@@ -27,12 +28,8 @@ export default function SingleProduct() {
               <i className="fa fa-star text-secondary" />
               <i className="fa fa-star" />
             </div>
-            <p className="mb-4">
-            gdfgd
-            </p>
-            <p className="mb-4">
-            gdfgdfg
-            </p>
+            <p className="mb-4">{Single_product_details.details}</p>
+
             <div className="input-group quantity mb-5" style={{ width: 100 }}>
               <div className="input-group-btn">
                 <button className="btn btn-sm btn-minus rounded-circle bg-light border">
@@ -50,12 +47,12 @@ export default function SingleProduct() {
                 </button>
               </div>
             </div>
-            <a
+            <NavLink
               href="#"
               className="btn border border-secondary rounded-pill px-4 py-2 mb-4 text-primary"
             >
               <i className="fa fa-shopping-bag me-2 text-primary" /> Add to cart
-            </a>
+            </NavLink>
           </div>
           <div className="col-lg-12">
             <nav>

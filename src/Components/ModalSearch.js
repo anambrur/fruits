@@ -10,7 +10,7 @@ export default function ModalSearch() {
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
       >
-        <div className="modal-dialog modal-fullscreen">
+        <div className="modal-dialog modal-fullscreen ">
           <div className="modal-content rounded-0">
             <div className="modal-header">
               <h5 className="modal-title" id="exampleModalLabel">

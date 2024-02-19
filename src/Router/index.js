@@ -5,8 +5,6 @@ import Contact from "../Pages/Contact";
 import Cart from "../Pages/Cart";
 import Chackout from "../Pages/Chackout";
 import ErrorPage from "../Pages/ErrorPage";
-import Admin from "../AdminPanel/Admin";
-import AddProduct from "../AdminPanel/AddProduct";
 import Home from "../Pages/Home";
 
 
@@ -18,8 +16,7 @@ const router = createBrowserRouter([
     {path:'/cart',element:<Cart/>},
     {path:'/chackout',element:<Chackout/>},
     {path:'*',element:<ErrorPage/>},
-    {path:'admin',element:<Admin/>},
-    {path:'add-product',element:<AddProduct/>},
+   
     
 ])
 export default router

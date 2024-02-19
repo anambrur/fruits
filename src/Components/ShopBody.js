@@ -19,13 +19,7 @@ export default function ShopBody() {
                 <div className="col-lg-9">
                   <div className="row g-4 justify-content-center">
                     <FruitItem />
-                    <FruitItem />
-                    <FruitItem />
-                    <FruitItem />
-                    <FruitItem />
-                    <FruitItem />
-                    <FruitItem />
-                    <FruitItem />
+                    
 
                     <div className="col-12">
                       <div className="pagination d-flex justify-content-center mt-5">

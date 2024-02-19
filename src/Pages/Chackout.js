@@ -10,14 +10,9 @@ export default function Chackout() {
   return (
     <>
       <Navmenu/>
-      {/* Navbar End */}
-      {/* Modal Search Start */}
+      
       <ModalSearch/>
-      {/* Modal Search End */}
-      {/* Single Page Header start */}
-      <SinglePageHeader/>
-      {/* Single Page Header End */}
-      {/* Checkout Page Start */}
+      
       <div className="container-fluid py-5">
         <div className="container py-5">
           <h1 className="mb-4">Billing details</h1>

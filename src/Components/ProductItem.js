@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getProducts, getppp } from "../Reducer/counterSlice";
+import { NavLink } from "react-router-dom";
 
 export default function ProductItem() {
   const products = useSelector((state) => state.counter.products);
@@ -16,6 +17,7 @@ export default function ProductItem() {
       {products.map((d, i) => {
         return (
           <div className="col-md-6 col-lg-4 col-xl-3" key={i}>
+            <NavLink to={`shop-details/${d.id}`}>
             <div className="rounded position-relative fruite-item">
               <div className="fruite-img">
                 <img
@@ -45,6 +47,7 @@ export default function ProductItem() {
                 </div>
               </div>
             </div>
+            </NavLink>
           </div>
         );
       })}

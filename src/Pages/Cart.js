@@ -13,7 +13,7 @@ export default function Cart() {
      
      <ModalSearch/>
       
-      <SinglePageHeader/>
+      {/* <SinglePageHeader/> */}
      
       <CartSection/>
       <Footer/>

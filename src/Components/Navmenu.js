@@ -59,9 +59,9 @@ export default function Navmenu() {
                 <NavLink to='/shop' className="nav-item nav-link">
                   Shop
                 </NavLink>
-                <NavLink to="/shop-detail" className="nav-item nav-link">
+                {/* <NavLink to="/shop-detail" className="nav-item nav-link">
                   Shop Detail
-                </NavLink>
+                </NavLink> */}
                 <div className="nav-item dropdown">
                   <a
                     href="#"

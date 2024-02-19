@@ -10,6 +10,7 @@ import axios from "axios";
 
 export default function ShopDetail() {
   const { id } = useParams();
+
   const [sing_pro_details, setSing_pro_details] = useState({
     id: "",
     name: "",
@@ -17,10 +18,11 @@ export default function ShopDetail() {
     details: "",
     price: "",
   });
+  // console.log(sing_pro_details)
   useEffect(() => {
     axios
       .get(
-        `http://localhost/reactjs/frutis/backend/getAllApi/getSingleProDetails.php?id=${id}`
+        `http://localhost/reactjs/adminpro-react/backend/API/ProductAPI/getIDProduct.php?id=${id}`
       )
       .then((res) => setSing_pro_details(res.data));
   }, []);
@@ -29,13 +31,14 @@ export default function ShopDetail() {
       {/* Navbar start */}
       <Navmenu />
       <ModalSearch />
-      <SinglePageHeader />
 
       {/* Single Product Start */}
+      <h1>1</h1>
+
       <div className="container-fluid py-5 mt-5">
         <div className="container py-5">
           <div className="row g-4 mb-5">
-            <SingleProduct Single_product_details={sing_pro_details}/>
+            <SingleProduct Single_product_details={sing_pro_details} />
 
             <ShopSidebar />
           </div>

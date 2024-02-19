@@ -10,7 +10,6 @@ export default function ErrorPage() {
     <>
       <Navmenu />
       <ModalSearch />
-      <SinglePageHeader />
       <Error404 />
       <Footer />
     </>
